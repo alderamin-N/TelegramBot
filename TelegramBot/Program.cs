@@ -42,7 +42,7 @@ namespace ConsoleApp1
                     case "/start":
                     LogAction("Начало работы", message.Chat.Id);
                         await botClient.SendTextMessageAsync(message.Chat.Id,
-                            $"Привет,{message.From.FirstName}, как хочешь провести эти выходные?",
+                            $"Привет, {message.From.FirstName}, как хочешь провести эти выходные?",
                             replyMarkup: replyKeyboard);
                         break;
                     case "Хочу поработать!":
@@ -171,7 +171,7 @@ namespace ConsoleApp1
                 case "Ballet":
                     LogAction("Пойти на балет", chatId);
                     await botClient.SendTextMessageAsync(chatId,
-                     text: "Балет прекрасен в это время года. Есть превосходные постановки!\r\n"+ "\"Мариинский теарт предлагает на эти выходные:\r\n");
+                     text: "Балет прекрасен в это время года. Есть превосходные постановки!\r\n"+ "\"Мариинский теарт\" предлагает на эти выходные:\r\n");
                    await botClient.SendTextMessageAsync(chatId,
                       text:
                       "балет Бориса Асафьева \"Бахчисарайский фонтан\"\r\n" +
